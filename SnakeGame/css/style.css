@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    background: url("../img/bg.jpg"); 
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+
+#hiscoreBox{
+    position: absolute;
+    top: 59px;
+    right: 140px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+
+#board{
+    background: url("../img/grass.jpg"); 
+    /* background: linear-gradient(rgb(196, 196, 143), rgb(196, 196, 143)); */
+    width: 80vmin;
+    height: 80vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(16, 1fr);
+    grid-template-columns: repeat(16, 1fr);
+}
+
+.head{
+    background: url("../img/head.jpg"); 
+    background-size: 5vmin 5vmin;
+    background-repeat: no-repeat;
+   /* background: linear-gradient(rgb(240, 124, 124), rgb(228, 228, 129)); */
+    /* border: 2px solid rgb(34, 4, 34);  */
+    transform: scale(1.02);
+    border-radius: 9px;
+}
+
+.snake{
+    background: url("../img/skin.jpg"); 
+    background-size: 5vmin 5vmin;
+    background-repeat: no-repeat;
+    /* background-color: rgb(4, 92, 55); */
+    /* border: .25vmin solid rgb(26, 22, 22); */
+    border-radius: 20px;
+}
+
+.food{
+    background: url("../img/apple.jpg"); 
+    background-size: 4vmin 4vmin;
+    background-repeat: no-repeat;
+    /* background: linear-gradient(red, purple); */
+    /* border: .25vmin solid black; */
+    border-radius: 8px;
+}
